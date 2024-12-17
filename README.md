@@ -229,6 +229,3 @@ Anda perlu mengatur USB CDC On Boot di toolbar untuk diaktifkan.
 | LEDA | IO10      | Active High     |
 | LEDB | IO11      | Active High     |
 
-**Referensi**
-
-- https://www.nologo.tech/product/esp32/esp32s3supermini/esp32S3SuperMini.html#%E8%BD%AF%E4%BB%B6%E8%AE%BE%E7%BD%AE
