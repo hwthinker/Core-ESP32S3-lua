@@ -52,7 +52,7 @@ Board **ESP32-S3 ** ini mendukung upload dan komunikasi data serial ke komputer 
 
 Pengaturan ini konfigurasi ini ada dua hal yaitu pengaturan Hardware dan pengaturan Software.  untuk pengaturan hardware bisa dilihat pada gambar dibawah ini:
 
-![image-20241217043509076](./assets/image-20241217043509076.png)
+![Switch mode USB: Native uSB vs Serial USB CH343](./assets/usb-mode-switch.jpg)
 
 ### Mode USB Serial konverter (default manufaktur)
 
@@ -98,11 +98,13 @@ void loop() {
   Serial.println("LED1 ON");
   delay(1000);              // wait for a second
   digitalWrite(LED1, LOW);  // turn the LED off by making the voltage LOW
+  Serial.println("LED1 OFF");
   delay(1000);               // wait for a second
   digitalWrite(LED2, HIGH);  // turn the LED on (HIGH is the voltage level)
   Serial.println("LED2 ON");
   delay(1000);              // wait for a second
   digitalWrite(LED2, LOW);  // turn the LED off by making the voltage LOW
+  Serial.println("LED2 OFF");
   delay(1000);  // wait for a second
 }
 
@@ -112,7 +114,7 @@ void loop() {
 
 1. **Pin GPIO**:  pin `led` menunjuk ke GPIO 10 dan GPIO 11, tempat LED internal terhubung.
 2. **Fungsi `Serial.begin(9600)`**: Mengaktifkan komunikasi serial pada baud rate 9600. Fungsi ini memungkinkan board mengirimkan data melalui port USB ke komputer.
-3. **Fungsi `Serial.println()`**: Mengirimkan string teks ke *Serial Monitor*. Program ini mengirimkan "ON" ketika LED mati dan "OFF" ketika LED menyala.
+3. **Fungsi `Serial.println()`**: Mengirimkan string teks ke *Serial Monitor*. Program ini mengirimkan "ON" ketika LED menyala dan "OFF" ketika LED mati.
 
 ## Upload program
 
@@ -146,12 +148,10 @@ Langkah yang harus dilakukan
 
 2. Buka *Serial Monitor* di Arduino IDE dengan kecepatan komunikasi 9600 baud.
 
-3. Amati status LED yang ditampilkan pada 
+3. Amati status LED yang ditampilkan pada Serial Monitor:
 
-   Serial Monitor:
-
-   - **"OFF"** saat LED menyala.
-- **"ON"** saat LED mati.
+   - **"ON"** saat LED menyala.
+   - **"OFF"** saat LED mati.
 
 Program ini merupakan contoh sederhana namun sangat efektif untuk mempelajari komunikasi serial dan mengintegrasikannya dengan kontrol perangkat keras seperti LED. Selamat mencoba! 🚀
 
