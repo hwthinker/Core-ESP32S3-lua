@@ -2,6 +2,23 @@
 
 # Core-ESP32S3-lua board
 
+<!-- hwthinker-store-links -->
+
+## Beli boardnya & tutorial lengkap
+
+**Board yang dipakai di repo ini tersedia di HwThinker Store:**
+
+- [ESP32-S3 Board Dual Core WiFi Bluetooth BLE 5.0 Mesh Type-C 16MB Flash](https://hwthinker.com/produk/8a338358-90d3-427c-99c6-e54ae11884c9)
+
+**Tutorial lengkap — langkah bergambar, troubleshooting, dan kode yang sudah diuji:**
+
+- [CORE-ESP32S3-A10 — Setup Arduino IDE, Mode USB CH343/Native, dan LED Onboard](https://hwthinker.com/tutorials/core-esp32s3-a10)
+
+Butuh bantuan pemasangan? Sapa kami lewat live chat di [hwthinker.com](https://hwthinker.com) — barang dikirim dari Surabaya, sudah diuji sebelum dikemas.
+
+<!-- /hwthinker-store-links -->
+
+
 ![esp32s3_luatos_core_pinout](./assets/esp32s3_luatos_core_pinout.jpg)
 
 
